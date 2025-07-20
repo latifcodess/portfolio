@@ -8,6 +8,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -123,4 +128,89 @@ img {
 
 .sec2 {
   margin-top: 40px;
+}
+
+.sec3 {
+  margin-top: 40px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-weight: bold;
+}
+
+.tech svg {
+  width: auto;
+  height: 25px;
+}
+
+.html {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1d1c24;
+  border-radius: 10px;
+  border: solid;
+  border-color: #26242f;
+  color: gray;
+}
+
+.css {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1d1c24;
+  border-radius: 10px;
+  border: solid;
+  border-color: #26242f;
+  color: gray;
+}
+
+.git {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1d1c24;
+  border-radius: 10px;
+  border: solid;
+  border-color: #26242f;
+  color: gray;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1d1c24;
+  border-radius: 10px;
+  border: solid;
+  border-color: #26242f;
+  color: gray;
+}
+
+.html:hover {
+  background-color: #1d1c2400;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.css:hover {
+
+}
+
+.git:hover {
+
+}
+
+.github:hover {
+
 }
