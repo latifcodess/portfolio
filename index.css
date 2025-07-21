@@ -130,8 +130,16 @@ img {
   margin-top: 40px;
 }
 
+.sec2 h2 {
+  font-size: 40px;
+}
+
 .sec3 {
   margin-top: 40px;
+}
+
+.sec3 h2 {
+  font-size: 40px;
 }
 
 .tech {
@@ -143,54 +151,21 @@ img {
 
 .tech svg {
   width: auto;
-  height: 25px;
+  height: 20px;
 }
 
-.html {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #1d1c24;
-  border-radius: 10px;
-  border: solid;
-  border-color: #26242f;
-  color: gray;
-}
-
-.css {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #1d1c24;
-  border-radius: 10px;
-  border: solid;
-  border-color: #26242f;
-  color: gray;
-}
-
-.git {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #1d1c24;
-  border-radius: 10px;
-  border: solid;
-  border-color: #26242f;
-  color: gray;
-}
-
+.js,
+.html,
+.css,
+.git,
 .github {
   display: flex;
   align-items: center;
   gap: 8px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #1d1c24;
   border-radius: 10px;
   border: solid;
@@ -198,19 +173,40 @@ img {
   color: gray;
 }
 
-.html:hover {
-  background-color: #1d1c2400;
-  transition: background-color 0.3s ease-in-out;
+.js p,
+.github p,
+.git p,
+.css p,
+.html p {
+  margin: 0;
 }
 
-.css:hover {
-
+.js:hover,
+.css:hover,
+.html:hover,
+.git:hover,
+.github:hover{
+    background-color: #2b2933;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.git:hover {
-
+.sec4{
+  margin-top: 40px;
 }
 
-.github:hover {
+.sec4 h2{
+  font-size: 40px;
+}
 
+.code {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-weight: bold;
+}
+
+.code svg {
+  width: auto;
+  height: 20px;
 }
