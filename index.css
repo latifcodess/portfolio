@@ -202,7 +202,7 @@ img {
 }
 
 .sec2 {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .sec2 h2 {
@@ -210,7 +210,7 @@ img {
 }
 
 .sec3 {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .sec3 h2 {
@@ -267,7 +267,7 @@ img {
 }
 
 .sec4 {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .sec4 h2 {
@@ -284,4 +284,33 @@ img {
 .code svg {
   width: auto;
   height: 20px;
+}
+
+.sec5 {
+  margin-top: 70px;
+}
+
+.sec5 h2 {
+  font-size: 40px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background-color: #181414;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+form label span {
+  vertical-align: super;
+
 }
