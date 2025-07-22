@@ -1,3 +1,11 @@
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: "JetBrains Mono", monospace, sans-serif;
   background-color: #201e27;
@@ -6,6 +14,10 @@ body {
   margin: 40px auto;
   padding: 0 24px;
   box-sizing: border-box;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 a {
@@ -79,6 +91,69 @@ header svg:hover {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
+}
+
+.settings {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #201c1c;
+  padding: 20px;
+  border-radius: 0.5rem;
+  scale: 0.5;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.settings h3 {
+  margin: 0;
+}
+
+.settings p {
+  color: gray;
+}
+
+.settings svg {
+  width: auto;
+  height: 25px;
+}
+
+.title-container {
+  display: flex;
+  gap: 8px;
+}
+
+.settings.active {
+  transform: all 0.3s ease-in-out;
+  scale: 1;
+  opacity: 1;
+}
+
+.full-page.active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.427);
+  opacity: 1;
+}
+
+.full-page {
+  z-index: -1;
+  opacity: 0;
+}
+
+.theme {
+  margin-top: 30px;
+}
+
+.theme p {
+  color: white;
 }
 
 .sec1 {
@@ -168,8 +243,7 @@ img {
   padding-bottom: 5px;
   background-color: #1d1c24;
   border-radius: 10px;
-  border: solid;
-  border-color: #26242f;
+  border: 1px solid #444053;
   color: gray;
 }
 
@@ -185,17 +259,18 @@ img {
 .css:hover,
 .html:hover,
 .git:hover,
-.github:hover{
-    background-color: #2b2933;
+.github:hover {
+  border-color: #4f4a60;
+  background-color: #2b2933;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
 
-.sec4{
+.sec4 {
   margin-top: 40px;
 }
 
-.sec4 h2{
+.sec4 h2 {
   font-size: 40px;
 }
 
