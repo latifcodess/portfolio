@@ -210,18 +210,18 @@
       </section>
       <section class="sec5">
         <h2 id="contact">Contact me<span class="blue">.</span></h2>
-        <form>
-          <label for="name">Name<span class="blue">*</span>
-            <input type="text" id="name" name="name" />
-          </label>
+        <form action="https://formsubmit.co/latkrasniqi@gmail.com" method="post">
+          <label for="name" id="namel">Name<span class="blue">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required/>
           
-          <label for="email">Email<span class="blue">*</span>
-            <input type="email" name="email" id="email" />
-          </label>
+          <label for="email" id="emaill">Email<span class="blue">*</span></label>
+            <input type="email" name="email" id="email" placeholder="your@email.com" required/>
+          
 
-          <label for="msg">Message<span class="blue">*</span>
-            <textarea type="text" name="msg" id="msg"></textarea>
-          </label>
+          <label for="msg" id="msgl">Message<span class="blue">*</span></label>
+            <textarea type="text" name="msg" id="msg" placeholder="bla bla bla..." maxlength="500" required></textarea>
+          
+          <input type="submit" value="Send" id="send">
         </form>
       </section>
     </main>

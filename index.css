@@ -157,6 +157,8 @@ header svg:hover {
 }
 
 .sec1 {
+  border: solid blue;
+  border-radius: 30px;
   margin-top: 20px;
   display: flex;
   max-height: 720px;
@@ -183,8 +185,6 @@ header svg:hover {
 }
 
 .text {
-  border: solid;
-  border-color: #3700ff;
   padding: 40px;
   border-radius: 30px;
 }
@@ -294,23 +294,87 @@ img {
   font-size: 40px;
 }
 
+input {
+  font-family: "JetBrains Mono", monospace, sans-serif;
+  font-size: 15px;
+  padding: 7px;
+}
+
+textarea {
+  font-family: "JetBrains Mono", monospace, sans-serif;
+  font-size: 15px;
+  padding: 7px;
+}
+
 form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "namel emaill"
+    "name email"
+    "msgl msgl"
+    "msg msg"
+    "send send";
   gap: 16px;
-  background-color: #181414;
+  background-color: #151517;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  border: 1px solid #272727;
 }
 
 form label {
-  display: flex;
-  flex-direction: column;
   gap: 8px;
-  margin-bottom: 16px;
+}
+
+form input {
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #151517;
+  border: 1px solid #272727;
+}
+
+form textarea {
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #151517;
+  border: 1px solid #272727;
 }
 
 form label span {
   vertical-align: super;
+}
 
+#namel {
+  grid-area: namel;
+}
+
+#name {
+  grid-area: name;
+}
+
+#emaill {
+  grid-area: emaill;
+}
+
+#email {
+  grid-area: email;
+}
+
+#msgl {
+  grid-area: msgl;
+}
+
+#msg {
+  grid-area: msg;
+  height: 90px;
+}
+
+#send {
+  grid-area: send;
+  background-color: rgb(34, 34, 34);
+  color: rgb(118, 114, 114);
+}
+
+#email,
+#name {
+  height: 30px;
 }
