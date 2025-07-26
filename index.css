@@ -126,13 +126,12 @@ header svg:hover {
 }
 
 .settings.active {
-  transform: all 0.3s ease-in-out;
+  transform: all 0.1s ease-in-out;
   scale: 1;
   opacity: 1;
 }
 
 .full-page.active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 999;
   position: fixed;
   top: 0;
@@ -141,6 +140,7 @@ header svg:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.427);
   opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .full-page {
@@ -199,6 +199,7 @@ img {
   width: 393.75px;
   height: 650px;
   border-radius: 30px;
+  filter: brightness(0.6);
 }
 
 .sec2 {
@@ -207,6 +208,36 @@ img {
 
 .sec2 h2 {
   font-size: 40px;
+}
+
+.sec2 svg {
+  width: auto;
+  height: 20px;
+}
+
+.sec2 p {
+  margin: 0;
+}
+
+.button-container {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-weight: bold;
+}
+
+.gitview {
+  display: flex;
+  background-color: #3c82f6;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.gitview:hover {
+  background-color: #0462f8;
+  cursor: pointer;
 }
 
 .sec3 {
@@ -233,7 +264,10 @@ img {
 .html,
 .css,
 .git,
-.github {
+.github,
+.swift,
+.xcode,
+.clion {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -251,7 +285,10 @@ img {
 .github p,
 .git p,
 .css p,
-.html p {
+.html p,
+.swift p,
+.xcode p,
+.clion p {
   margin: 0;
 }
 
@@ -259,7 +296,10 @@ img {
 .css:hover,
 .html:hover,
 .git:hover,
-.github:hover {
+.github:hover,
+.swift:hover,
+.xcode:hover,
+.clion:hover {
   border-color: #4f4a60;
   background-color: #2b2933;
   cursor: pointer;
@@ -288,6 +328,7 @@ img {
 
 .sec5 {
   margin-top: 70px;
+  margin-bottom: 55px;
 }
 
 .sec5 h2 {
@@ -372,9 +413,71 @@ form label span {
   grid-area: send;
   background-color: rgb(34, 34, 34);
   color: rgb(118, 114, 114);
+  transition: 0.2s ease-in-out;
+}
+
+#send.enable:hover {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  cursor: pointer;
 }
 
 #email,
 #name {
   height: 30px;
+}
+
+.social svg {
+  width: auto;
+  height: 20px;
+}
+
+.social {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-weight: bold;
+}
+
+#socialp {
+  margin-top: 30px;
+}
+
+.social p {
+  margin: 0;
+}
+
+.twitter,
+.insta {
+  display: flex;
+  background-color: #151517;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid #272727;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.twitter:hover,
+.insta:hover {
+  background-color: #202023;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  border-top: 2px solid #272727
+}
+
+.copy {
+  color:#78787b;
+}
+
+footer a {
+  margin-left: auto;
+  margin-top:15px;
+  margin-bottom: 15px;
+  color:#78787b;
 }
