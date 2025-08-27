@@ -163,23 +163,13 @@ header svg:hover {
   display: flex;
   max-height: 720px;
   width: 100%;
+  justify-content: center;
 }
 
-.left {
-  flex: 1;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-right: 60px;
-}
 .ppp {
   font-size: 25px;
 }
 
-.left h2 {
-  font-size: 2.4rem;
-}
 .pp {
   margin-top: 30px;
 }
@@ -187,6 +177,11 @@ header svg:hover {
 .text {
   padding: 40px;
   border-radius: 30px;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 2.4rem;
 }
 
 .img-container {
@@ -220,7 +215,7 @@ img {
 }
 
 .button-container {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 12px;
   font-weight: bold;
@@ -287,8 +282,7 @@ img {
 .css p,
 .html p,
 .swift p,
-.xcode p,
-.clion p {
+.xcode p {
   margin: 0;
 }
 
@@ -298,8 +292,7 @@ img {
 .git:hover,
 .github:hover,
 .swift:hover,
-.xcode:hover,
-.clion:hover {
+.xcode:hover {
   border-color: #4f4a60;
   background-color: #2b2933;
   cursor: pointer;
@@ -433,7 +426,7 @@ form label span {
 }
 
 .social {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 12px;
   font-weight: bold;
@@ -468,16 +461,34 @@ footer {
   display: flex;
   margin: 0 auto;
   width: 80%;
-  border-top: 2px solid #272727
+  border-top: 2px solid #272727;
 }
 
 .copy {
-  color:#78787b;
+  color: #78787b;
 }
 
 footer a {
   margin-left: auto;
-  margin-top:15px;
+  margin-top: 15px;
   margin-bottom: 15px;
-  color:#78787b;
+  color: #78787b;
+}
+
+@media screen and (max-width: 1000px) {
+  .sec1 {
+    z-index: 101;
+  }
+  
+  .left {
+    z-index: 100;
+  }
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 393.75px;
+    height: 650px;
+    z-index: 99;
+  }
 }
