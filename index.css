@@ -476,19 +476,19 @@ footer a {
 }
 
 @media screen and (max-width: 1000px) {
-  .sec1 {
-    z-index: 101;
-  }
-  
-  .left {
-    z-index: 100;
+  form {
+    grid-template-areas:     
+    "namel namel"
+    "name name"
+    "emaill emaill"
+    "email email"
+    "msgl msgl"
+    "msg msg"
+    "send send";
   }
 
-  img {
-    position: absolute;
-    object-fit: cover;
-    width: 393.75px;
-    height: 650px;
-    z-index: 99;
+  .navbar {
+    display: none;
   }
 }
+
